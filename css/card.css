@@ -1,0 +1,98 @@
+/*
+-- Image Container
+*/
+.card .image-container {
+    position: relative;
+    background-color: var(--image-bg-color);
+    height: 0;
+  }
+  
+  .card .image-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  /* 16:9 Aspect Ratio */
+  .card .image-container.sixteen-by-nine {
+    padding-top: 56.25%;
+  }
+  
+  /* 4:3 Aspect Ratio */
+  .card .image-container.four-by-tree {
+    padding-top: 75%;
+  }
+  
+  /* 3:2 Aspect Ratio */
+  .card .image-container.tree-by-two {
+    padding-top: 66.66%;
+  }
+  
+  /* 8:5 Aspect Ratio */
+  .card .image-container.eight-by-five {
+    padding-top: 62.5%;
+  }
+  
+  /* 1:1 Aspect Ratio */
+  .card .image-container.one-by-one {
+    padding-top: 100%;
+  }
+  
+  .card .image-container .aspRTO {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  /*
+  -- Description
+  */
+  .card .description {
+    margin-top: var(--space-m);
+  }
+  
+  .card .description p,
+  .card .description-more p {
+    color: var(--ter-text-color);
+    font-size: 1.8rem;
+  }
+  
+  /*
+  -- Button Use Cases
+  */
+  .card .image-container.button-container {
+    background-color: var(--paper-bg-color);
+  }
+  
+  .card .image-container a {
+    height: 100%;
+    width: 100%;
+    padding: var(--space-xlm);
+    line-height: 1;
+    font-size: 2.6rem;
+    z-index: 1;
+  }
+  
+  .card .image-container.button-container .aspRTO {
+    overflow: initial;
+  }
+  
+  .card .button-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.2s linear;
+    -moz-transition: opacity 0.2s linear;
+    -webkit-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
+  }
+  
+  .card .button-container:hover img {
+    opacity: 0.03;
+  }
+  

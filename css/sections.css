@@ -1,0 +1,209 @@
+/*
+-- Sections
+*/
+section {
+    padding: var(--space-xxlm) 0;
+    min-height: 100vh;
+  }
+  
+  section:first-child {
+    padding-top: calc(var(--space-xxl) + var(--nav-bar-height));
+  }
+  
+  /*
+  -- Services
+  */
+  .service-card {
+    padding: var(--space-xxl);
+    color: black;
+  }
+  .service-card:hover{
+    background-color: var(--main-color);
+    color: var(--sec-text-color);
+  }
+  
+  .service-card.active {
+    background-color: var(--main-color);
+  }
+  
+  .service-card.active h3,
+  .service-card.active p {
+    color: var(--sec-text-color);
+  }
+
+  /*PRICING*/
+  .pricing-table{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: min(1600px, 100%);
+    margin: auto;
+  }
+  
+  .pricing-card{
+    flex: 1;
+    max-width: 360px;
+    background-color: #fff;
+    margin: 20px 10px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    color: #2d2d2d;
+    transition: .3s linear;
+    border: solid rgba(25, 118, 210, 1);
+  }
+  
+  .pricing-card-header{
+    background-color: rgba(25, 118, 210, 1);;
+    display: inline-block;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 0 0 20px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .4s linear;
+  }
+  
+  .pricing-card:hover .pricing-card-header{
+    box-shadow: 0 0 0 26em rgba(25, 118, 210, 1);
+  }
+  
+  .price{
+    font-size: 70px;
+    color: rgba(25, 118, 210, 1);
+    margin: 40px 0;
+    transition: .2s linear;
+  }
+  
+  .price sup, .price span{
+    font-size: 22px;
+    font-weight: 700;
+  }
+  
+  .pricing-card:hover ,.pricing-card:hover .price{
+    color: #fff;
+  }
+  
+  .pricing-card li{
+    font-size: 16px;
+    padding: 10px 0;
+    text-transform: uppercase;
+  }
+  
+  .order-btn{
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-top: 80px;
+    border: 2px solid rgba(25, 118, 210, 1);;
+    color: rgba(25, 118, 210, 1);;
+    padding: 18px 40px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: .3s linear;
+  }
+  
+  .order-btn:hover{
+    background-color: rgba(25, 118, 210, 1);;
+    color: #fff;
+  }
+  
+  @media screen and (max-width:1100px){
+    .pricing-card{
+      flex: 50%;
+    }
+  }
+
+
+
+  /*Case Studies*/
+  .cards-section .card {
+    margin: var(--space-xxl) 0 0 0;
+  }
+  
+  /*
+  -- Footer
+  */
+  footer {
+    padding: var(--space-l) 0;
+  }
+  
+  footer a.link {
+    font-size: 1.6rem;
+  }
+  
+  footer a.link:last-child {
+    margin-right: 0;
+  }
+  
+  footer hr {
+    margin: var(--space-l) 0;
+    background-color: var(--h-rule);
+    height: 2px;
+    border: none;
+  }
+  
+  .copy-rights i {
+    color: var(--ter-text-color);
+  }
+  
+  .copy-rights p {
+    line-height: 1;
+  }
+  
+  /*
+  -- Media
+  */
+  
+  /* Medium devices (tablets, 768px and down)*/
+  @media (max-width: 767px) {
+    /*
+    -- Services
+    */
+    .service-card:not(.active) {
+      padding: var(--space-xxl) var(--space-xxl) 0 var(--space-xxl);
+    }
+  
+    /*
+    -- Footer
+    */
+    footer a.link:first-child {
+      margin-left: 0;
+    }
+  }
+  
+  /* Extra small devices (portrait phones, less than 576px)*/
+  @media (max-width: 575px) {
+    /*
+    -- Services
+    */
+    .service-card {
+      padding: var(--space-l) !important;
+    }
+  
+    .service-card.active {
+      margin-bottom: var(--space-l);
+    }
+  
+    /*
+    -- Footer
+    */
+    footer a.link {
+      margin-right: 0;
+    }
+  }
+  
+  /* Extra small devices (portrait phones, less than 576px)*/
+  @media (max-width: 400px) {
+    .links-col {
+      flex-direction: column;
+    }
+  
+    footer a.link {
+      margin-left: 0;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  

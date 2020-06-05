@@ -1,0 +1,111 @@
+/*
+-- Utils
+*/
+
+/*
+-- Change Gutter Width
+*/
+.custom-gutter.row {
+    margin-right: -25px;
+    margin-left: -25px;
+  }
+  .custom-gutter > [class^="col-"],
+  .custom-gutter > [class^=" col-"] {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .container {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  
+  /*
+  -- Fonts
+  */
+  .roboto-slab {
+    font-family: "Roboto Slab", serif;
+  }
+  
+  .bold {
+    font-weight: 700;
+  }
+  
+  /*
+  -- Space
+  */
+  
+  /*Margin Bottom*/
+  .omb-small {
+    margin-bottom: var(--space-sm);
+  }
+  
+  .omb-mLarge {
+    margin-bottom: var(--space-xlm);
+  }
+  
+  .omb-large {
+    margin-bottom: var(--space-l);
+  }
+  
+  .omb-xLarge {
+    margin-bottom: var(--space-xxl);
+  }
+  
+  .omb-xxLarge {
+    margin-bottom: var(--space-xxxl);
+  }
+  
+  /*Margin Right*/
+  .omr-medium {
+    margin-right: var(--space-m);
+  }
+  
+  /*Margin Left*/
+  .oml-medium {
+    margin-left: var(--space-m);
+  }
+  
+  /*Margin Top*/
+  .omt-medium {
+    margin-top: var(--space-m);
+  }
+  
+  /*
+  -- Icons
+  */
+  i.small {
+    font-size: 1.8rem;
+  }
+  i.medium {
+    font-size: 2.4rem;
+  }
+  i.large {
+    font-size: 3.2rem;
+  }
+  
+  /*
+  -- Media
+  */
+  
+  /* Medium devices (tablets, 768px and down)*/
+  @media (max-width: 767px) {
+    .omb-sm-xLarge {
+      margin-bottom: var(--space-xxl);
+    }
+  
+    .omb-sm-large {
+      margin-bottom: var(--space-l);
+    }
+  }
+  
+  /* Extra small devices (portrait phones, less than 576px)*/
+  @media (max-width: 575px) {
+    .omb-xs-xLarge {
+      margin-bottom: var(--space-xxl);
+    }
+  
+    .omb-xs-large {
+      margin-bottom: var(--space-l);
+    }
+  }
+  

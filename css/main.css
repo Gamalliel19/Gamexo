@@ -1,0 +1,141 @@
+@import "nav.css";
+@import "text.css";
+@import "card.css";
+@import "sections.css";
+@import "form.css";
+@import "animations.css";
+@import "slider.css";
+@import "utils.css";
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*
+  -- Colors
+  */
+  --main-text-color: #000000;
+  --sec-text-color: #ffffff;
+  --ter-text-color: #757575;
+  --paper-bg-color: #ffffff;
+  --nav-bg-color: rgba(255, 255, 255, 0.9);
+  --h-rule: #eeeeee;
+  --image-bg-color: #eeeeee;
+  --input-border-color: #000000;
+  --input-bg-color: #ffffff;
+  --slider-button-bg-color: #ffffff;
+  --slider-button-active-bg-color: rgba(255, 255, 255, 0.8);
+
+  /*Main Color*/
+  --main-color: rgba(25, 118, 210, 1);
+  --main-color-op: rgba(25, 118, 210, 0.4);
+  --underline-color: rgba(25, 118, 210, 0.2);
+  --button-active-bg-color: rgba(25, 118, 210, 0.8);
+
+  /*
+  -- Numbers
+  */
+  /*Main Spaces*/
+  --space-xxxl: 150px;
+  --space-xxlm: 100px;
+  --space-xxl: 50px;
+  --space-xl: 40px;
+  --space-xlm: 30px;
+  --space-l: 25px;
+  --space-ml: 20px;
+  --space-m: 15px;
+  --space-s: 10px;
+  --space-sm: 5px;
+
+  /*Sizes*/
+  --nav-bar-height: 90px;
+  --slider-button-size: 15px;
+
+  /*Z-index*/
+  --nav-menu-z-index: 11;
+  --nav-z-index: 10;
+  --slider-buttons-z-index: 9;
+  --slider-slide-checked-z-index: 8;
+  --slider-slide-z-index: 7;
+  --underline-z-index: 1;
+  --underline-after-z-index: -1;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--main-color);
+  color: var(--main-text-color);
+  line-height: 1.8;
+  font-weight: 300;
+  font-size: 1.6rem;
+  min-height: 100vh;
+}
+
+::selection {
+  background: var(--main-color);
+  color: var(--sec-text-color);
+}
+
+.paper {
+  background-color: var(--paper-bg-color);
+}
+
+/**************************************************************
+-- The prefers-color-scheme CSS media feature is used to detect
+-- if the user has requested the system use a light or dark color theme.
+---------------------------------------------------------------
+-- Uncomment the code below if this feature is desired
+*/
+/*
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-text-color: #eeeeee;
+    --sec-text-color: #e0e0e0;
+    --ter-text-color: #bdbdbd;
+    --paper-bg-color: #212121;
+    --nav-bg-color: rgba(33, 33, 33, 0.9);
+    --h-rule: #757575;
+    --image-bg-color: #757575;
+    --input-border-color: #eeeeee;
+    --input-bg-color: #212121;
+    --slider-button-bg-color: #212121;
+    --slider-button-active-bg-color: rgba(33, 33, 33, 0.8);
+    --underline-color: rgba(25, 118, 210, 0.5);
+  }
+
+  nav a.link.active,
+  nav a.link:hover,
+  .m-nav-links-container a:hover {
+    color: #42a5f5;
+  }
+
+  .input-group input:focus,
+  .text-area-group textarea:focus {
+    border-color: #42a5f5;
+  }
+
+  .input-group input:focus,
+  .text-area-group textarea:focus,
+  .input-group input:focus + label,
+  .text-area-group textarea:focus + label {
+    color: #42a5f5;
+  }
+}
+*/
+
+.home-img{
+  height: 500px;
+}
+
+#secFour a{
+  color: #ffffff;
+}

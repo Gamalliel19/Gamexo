@@ -1,0 +1,99 @@
+/*
+-- Form
+*/
+.input-group {
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-group,
+  .text-area-group {
+    position: relative;
+    margin-bottom: var(--space-xxl);
+  }
+  
+  .input-group input {
+    height: inherit;
+    padding: 0 var(--space-xlm);
+  }
+  
+  .text-area-group textarea {
+    height: auto;
+    padding: var(--space-l) var(--space-xlm);
+    max-width: 100%;
+    min-width: 100%;
+    resize: none;
+  }
+  
+  .input-group input,
+  .text-area-group textarea {
+    background-color: var(--input-bg-color);
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--input-border-color);
+    color: var(--main-text-color);
+  }
+  
+  .input-group input::placeholder,
+  .text-area-group textarea::placeholder {
+    visibility: hidden;
+    color: transparent;
+  }
+  
+  .input-group input::-moz-placeholder,
+  .text-area-group textarea::-moz-placeholder {
+    visibility: hidden;
+    color: transparent;
+  }
+  
+  .input-group input:focus,
+  .text-area-group textarea:focus {
+    border-color: var(--main-color);
+    color: var(--main-color);
+  }
+  
+  .input-group label,
+  .text-area-group label {
+    position: absolute;
+    background-color: var(--input-bg-color);
+    left: var(--space-xlm);
+    line-height: 1;
+    pointer-events: none;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out,
+      font-size 0.2s ease-in-out;
+    -moz-transition: transform 0.2s ease-in-out, color 0.2s ease-in-out,
+      font-size 0.2s ease-in-out;
+    -webkit-transition: transform 0.2s ease-in-out, color 0.2s ease-in-out,
+      font-size 0.2s ease-in-out;
+    -o-transition: transform 0.2s ease-in-out, color 0.2s ease-in-out,
+      font-size 0.2s ease-in-out;
+  }
+  
+  .text-area-group label {
+    top: var(--space-l);
+  }
+  
+  .input-group input:focus + label,
+  .text-area-group textarea:focus + label {
+    transform: translateY(-30px);
+    color: var(--main-color);
+    font-size: 1.2rem;
+  }
+  
+  .input-group input:not(:placeholder-shown) + label,
+  .text-area-group textarea:not(:placeholder-shown) + label {
+    transform: translateY(-30px);
+    font-size: 1.2rem;
+  }
+  
+  .input-group label,
+  .input-group input,
+  .text-area-group textarea,
+  .text-area-group label {
+    font-weight: 300;
+    font-size: 1.8rem;
+    font-family: "Roboto", sans-serif;
+  }
+  
